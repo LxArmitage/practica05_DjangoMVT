@@ -13,11 +13,11 @@ ROLES = [
 
 # Usuarios de prueba: (username, password, rol)
 USUARIOS = [
-    ("rpizarroanalista", "probando", "Analista"),
-    ("rpizarroduenio", "probando", "Dueño"),
-    ("rpizarrovendedor", "probando", "Vendedor"),
-    ("rpizarroespecialista", "probando", "Especialista"),
-    ("rpizarrocliente", "probando", "Cliente"),
+    ("oswaldoanalista", "probando", "Analista"),
+    ("oswaldoduenio", "probando", "Dueño"),
+    ("oswaldovendedor", "probando", "Vendedor"),
+    ("oswaldoespecialista", "probando", "Especialista"),
+    ("oswaldocliente", "probando", "Cliente"),
 ]
 
 
@@ -37,9 +37,9 @@ def cargar_datos(apps, schema_editor):
 
     # Superusuario administrador
     admin, creado = User.objects.get_or_create(
-        username="admin",
+        username="oswaldo",
         defaults={
-            "email": "admin@practica05.com",
+            "email": "oswaldo@practica05.com",
             "is_staff": True,
             "is_superuser": True,
             "is_active": True,
@@ -72,7 +72,7 @@ def borrar_datos(apps, schema_editor):
     Rol = apps.get_model("usuarios", "Rol")
     PerfilUsuario = apps.get_model("usuarios", "PerfilUsuario")
     User = apps.get_model("auth", "User")
-    usernames = ["admin"] + [u[0] for u in USUARIOS]
+    usernames = ["oswaldo"] + [u[0] for u in USUARIOS]
     PerfilUsuario.objects.filter(usuario__username__in=usernames).delete()
     User.objects.filter(username__in=usernames).delete()
     Rol.objects.filter(nombre__in=[r[0] for r in ROLES]).delete()

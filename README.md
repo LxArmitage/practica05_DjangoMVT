@@ -51,14 +51,14 @@ Abrir en el navegador:
 
 ## Usuarios de prueba (se crean solos con las migraciones)
 
-| Usuario                 | Contraseña        | Rol           |
-|-------------------------|-------------------|---------------|
-| admin                   | Practica05Django  | Administrador (superusuario) |
-| rpizarroanalista        | probando          | Analista      |
-| rpizarroduenio          | probando          | Dueño         |
-| rpizarrovendedor        | probando          | Vendedor      |
-| rpizarroespecialista    | probando          | Especialista  |
-| rpizarrocliente         | probando          | Cliente       |
+| Usuario                | Contraseña        | Rol           |
+|------------------------|-------------------|---------------|
+| oswaldo                | Practica05Django  | Administrador (superusuario) |
+| oswaldoanalista        | probando          | Analista      |
+| oswaldoduenio          | probando          | Dueño         |
+| oswaldovendedor        | probando          | Vendedor      |
+| oswaldoespecialista    | probando          | Especialista  |
+| oswaldocliente         | probando          | Cliente       |
 
 > Son cuentas de prueba para la práctica; la base de datos se recrea en cada despliegue.
 
