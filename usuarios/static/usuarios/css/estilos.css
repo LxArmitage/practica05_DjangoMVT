@@ -1,0 +1,94 @@
+/* =========================================================
+   ESTILO GENERAL
+   ========================================================= */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #333333;
+}
+
+/* =========================================================
+   CONTENEDOR PRINCIPAL
+   ========================================================= */
+.contenedor {
+    width: 90%;
+    max-width: 500px;
+    margin: 80px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================================================
+   TÍTULOS
+   ========================================================= */
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+h2 {
+    text-align: center;
+    color: #555555;
+    margin-bottom: 30px;
+}
+
+/* =========================================================
+   FORMULARIO
+   ========================================================= */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+input:focus {
+    outline: none;
+    border-color: #555555;
+}
+
+/* =========================================================
+   BOTONES
+   ========================================================= */
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #333333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background: #555555;
+}
+
+/* =========================================================
+   INFORMACIÓN DEL USUARIO
+   ========================================================= */
+.informacion {
+    margin-top: 25px;
+    padding: 15px;
+    background: #f0f2f4;
+    border-radius: 8px;
+    text-align: center;
+}
+.pie {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #777777;
+}

@@ -1,0 +1,8 @@
+roles: 6 -> Administrador, Analista, Cliente, Dueño, Especialista, Vendedor
+usuarios: 6 | perfiles: 6
+GET / -> 200 | Control de Usuarios: True
+GET /login/ -> 200 | form user: True | csrf: True | css: True
+POST login analista -> 302 redirect a: /
+inicio: rol Analista: True | alertJS: True
+POST login malo -> 200 | error: True
+login admin: True | /admin/ -> 200 | roles admin page -> 200

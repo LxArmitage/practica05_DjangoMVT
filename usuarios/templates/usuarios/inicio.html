@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ titulo }}</title>
+    <link
+        rel="stylesheet"
+        href="{% static 'usuarios/css/estilos.css' %}"
+    >
+</head>
+<body>
+    <div class="contenedor">
+        <h1>{{ titulo }}</h1>
+        <p>{{ mensaje }}</p>
+        {% if rol %}
+        <script>
+            alert(
+                "Bienvenido. Ha ingresado como usuario de tipo {{ rol|escapejs }}."
+            );
+        </script>
+        <div class="informacion">
+            Rol del usuario:
+            <strong>{{ rol }}</strong>
+        </div>
+        {% endif %}
+        <div class="pie">
+            Aplicación para el control de usuarios y roles
+        </div>
+    </div>
+</body>
+</html>
